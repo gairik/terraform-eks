@@ -1,7 +1,7 @@
 # A typical DevOps take home challenge! 
 - Create a stateful application 
 - Deploy it in Kubernetes
-- Do you know IaC? Please use your fav IaC tool to create your cluster. (I mean just say it now!)
+- Do you know IaC? Please use your fav IaC tool to create your cluster. (Terraform - I mean just say it now!) \n
 So here is answer to all those questions!
 
 ## Create the file terraform.tfvars 
