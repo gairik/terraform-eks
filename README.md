@@ -41,6 +41,10 @@ sed -i 's/terraform-eks-demo-node/autoscaler-policy/g' eksctl.sh
 chmod +x eksctl.sh 
 ./eksctl.sh
 ```
+## Play around by creating Deployment and scale up to test
+
+``` kubectl get nodes -w ```
+
 ## Destroy
 Make sure all the resources created by Kubernetes are removed (LoadBalancers, Security groups), and issue:
 ```
