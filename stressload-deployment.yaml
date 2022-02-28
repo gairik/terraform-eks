@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: application-cpu
+  name: application-cpu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: application-cpu
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: application-cpu
+    spec:
+      containers:
+      - image: aimvector/application-cpu:v1.0.0
+        name: application-cpu
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "50Mi"
+            cpu: "500m"
+          limits:
+            memory: "500Mi"
+            cpu: "2000m"
