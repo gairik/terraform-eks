@@ -22,12 +22,13 @@ kubectl get nodes
 ```
 ## Add autoscalaer configuration
 
-# Create eksctl.sh for configuring autoscaler
+## Create eksctl.sh for configuring autoscaler
 ``` 
 eksctl utils associate-iam-oidc-provider --region=$region --cluster=terraform-eks-demo --approve
 ```
 
-# Create autoscaler config as k8s resource https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml
+## Create autoscaler config as k8s resource 
+https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml
 
 ```
 kubectl apply -f cluster-autoscaler-autodiscover.yaml
