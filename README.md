@@ -1,3 +1,13 @@
+## Create the file terraform.tfvars 
+```
+vim terraform.tfvars
+```
+Add the keys in this format
+```
+AWS_ACCESS_KEY="xxxx"
+AWS_SECRET_KEY="xxxxxxxxxx"
+```
+
 ## Terraform apply
 ```
 terraform init
