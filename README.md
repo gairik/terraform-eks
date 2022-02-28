@@ -43,7 +43,11 @@ chmod +x eksctl.sh
 ```
 ## Play around by creating Deployment and scale up to test
 
-``` kubectl get nodes -w ```
+``` 
+kubectl create -f stressload-deployment.yaml 
+kubectl scale deployment application-cpu --replicas=5
+kubectl get nodes -w
+```
 
 ## Destroy
 Make sure all the resources created by Kubernetes are removed (LoadBalancers, Security groups), and issue:
