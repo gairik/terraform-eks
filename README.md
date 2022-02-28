@@ -37,7 +37,7 @@ kubectl apply -f config-map-aws-auth.yaml
 ```
 kubectl get nodes
 ```
-## Add autoscalaer configuration
+## (Bonus)Add autoscalaer configuration
 
 ## Create eksctl.sh for configuring autoscaler
 ``` 
