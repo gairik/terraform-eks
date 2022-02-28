@@ -41,7 +41,7 @@ kubectl get nodes
 
 ## Create eksctl.sh for configuring autoscaler
 ``` 
-eksctl utils associate-iam-oidc-provider --region=$region --cluster=terraform-eks-demo --approve
+eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=terraform-eks-demo --approve
 ```
 
 ## Create autoscaler config as k8s resource 
