@@ -65,3 +65,4 @@ RUN mkdir -p ~/.terraform \
     && rm -f *.zip \
     && printf "terraform -install-autocomplete 2> /dev/null\n" >>~/.bashrc
 
+ENV PATH=$PATH:$HOME/.aws-iam:$HOME/.terraform
