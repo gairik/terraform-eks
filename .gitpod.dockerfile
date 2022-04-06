@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM gitpod/workspace-full
 
 
 ENV KUBE_LATEST_VERSION v1.23.5
@@ -7,16 +7,6 @@ ENV HELM_VERSION 3.8.1
 ENV TERRAFORM_VERSION 1.1.7
 
 
-RUN apk --update --no-cache add \
-  bash \
-  ca-certificates \
-  curl \
-  jq \
-  git \
-  openssh-client \
-  python3 \
-  tar \
-  wget
 
 RUN pip3 install --upgrade pip
 RUN pip3 install requests awscli
