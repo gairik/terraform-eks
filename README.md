@@ -1,4 +1,4 @@
-# EKS kubernetes clutser with Node-Autoscaler
+# EKS clutser automation with Node-Autoscaler
 - Typical DevOps take home task! 
 - Create a stateful application 
 - Deploy it in Kubernetes
