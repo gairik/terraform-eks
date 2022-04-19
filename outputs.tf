@@ -59,23 +59,4 @@ value = local.config-map-aws-auth
 }
 
 
-locals {
-  eksctl = <<EKSCTL
-eksctl create iamserviceaccount \
-    --name cluster-autoscaler \
-    --namespace kube-system \
-    --cluster terraform-eks-demo \
-    --approve \
-    --override-existing-serviceaccounts \
-    --attach-policy-arn "${aws_iam_role.demo-node.arn}"
-    
-
-EKSCTL
-
-}
-
-output "eksctl" {
-value = local.eksctl
-}
-
 
