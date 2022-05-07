@@ -31,6 +31,7 @@ resource "aws_launch_configuration" "demo" {
   security_groups = [aws_security_group.demo-node.id]
   user_data_base64 = base64encode(local.demo-node-userdata)
   key_name = "mykeypair"
+  spot_price    = "0.0278"
   lifecycle {
     create_before_destroy = true
   }
